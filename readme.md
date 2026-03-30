@@ -2,7 +2,7 @@
 
 A multi-agent system that takes a research question and returns a structured report. You give it a question, it searches the web, pulls out the relevant facts, checks its own work, and writes everything up with citations.
 
-Built for CSE 475. Uses `gpt-4.1-mini` by default.
+Built for CSE 598. Uses `gpt-4.1-mini` by default.
 
 ---
 
