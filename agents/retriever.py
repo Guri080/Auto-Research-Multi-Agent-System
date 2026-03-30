@@ -1,7 +1,7 @@
 import json
 from ddgs import DDGS
 
-from runner import run_agent
+from agents.runner import run_agent
 
 
 def search_duckduckgo(query: str, max_results: int = 5) -> list[dict]:
@@ -9,7 +9,7 @@ def search_duckduckgo(query: str, max_results: int = 5) -> list[dict]:
 
     return results  # returns title, href, and body
 
-def run_retriver(sub_questions: list,
+def run_retriever(sub_questions: list,
                  keyword: list):
 
     all_results = []
@@ -48,7 +48,7 @@ def run_retriver(sub_questions: list,
 
 
 if __name__ =='__main__':
-    result = run_retriver(
+    result = run_retriever(
             sub_questions=[ 
                 "What are the core components of the Transformer's encoder and decoder architecture?",
                 "How does self-attention enable the Transformer to process sequences more effectively than RNNs?"

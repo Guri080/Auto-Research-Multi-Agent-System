@@ -1,4 +1,5 @@
-from runner import run_agent
+import json
+from agents.runner import run_agent
 
 def run_planner(user_prompt: str):
 
@@ -21,8 +22,7 @@ def run_planner(user_prompt: str):
               """,
               user_prompt=user_prompt
               )
-    
-    return result
+    return json.loads(result)
 
 if __name__ == "__main__":
     def test():

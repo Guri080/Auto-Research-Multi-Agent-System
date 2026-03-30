@@ -1,4 +1,4 @@
-from runner import run_agent
+from agents.runner import run_agent
 import json
 
 def run_critic(sub_questions: str,

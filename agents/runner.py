@@ -7,7 +7,9 @@ load_dotenv(find_dotenv())
 
 
 MAX_ITERATIONS = 2
-MODEL = 'qwen3-30b-a3b-instruct-2507'
+# MODEL = 'qwen3-30b-a3b-instruct-2507'
+MODEL = 'gpt-4.1-mini'
+
 
 
 def run_agent(
@@ -18,7 +20,6 @@ def run_agent(
 ) -> str:
     
     client = OpenAI(
-            base_url="https://openai.rc.asu.edu/v1",
             api_key=os.getenv('OPENAI_API_KEY')
     )
 

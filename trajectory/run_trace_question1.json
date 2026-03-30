@@ -1,0 +1,1325 @@
+[
+  {
+    "step": 1,
+    "agent": "planner",
+    "critic_loop": 0,
+    "input": "What are the primary mechanisms by which large language models hallucinate, and what mitigation strategies have been proposed?",
+    "output": {
+      "sub_questions": [
+        "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?"
+      ],
+      "keywords": [
+        [
+          "large language model hallucination causes",
+          "mechanisms of hallucination in LLMs",
+          "why do LLMs hallucinate"
+        ],
+        [
+          "impact of architecture on LLM hallucination",
+          "training data and LLM hallucination",
+          "model design hallucination propensity"
+        ],
+        [
+          "hallucination detection in large language models",
+          "LLM output validation techniques",
+          "detecting hallucinated information in LLMs"
+        ],
+        [
+          "mitigation strategies for LLM hallucinations",
+          "reducing hallucination in language models",
+          "techniques to prevent LLM hallucinations"
+        ]
+      ],
+      "scope": "This research will focus on understanding the causes and mechanisms behind hallucinations in large language models and surveying existing detection and mitigation strategies. It will exclude unrelated AI models, focus on NLP-based large language models, and not cover detailed implementation or development of new mitigation techniques."
+    }
+  },
+  {
+    "step": 2,
+    "agent": "retriever",
+    "critic_loop": 0,
+    "input": [
+      "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+      "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+      "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+      "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?"
+    ],
+    "output": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "snippets": [
+          {
+            "title": "Hallucination (artificial intelligence) - Wikipedia",
+            "text": "Researchers from OpenAI wrote that hallucinations occur because the training and evaluation of LLMs reward guessing over acknowledging uncertainty, and proposed modifying the scoring of benchmarks.",
+            "url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+          },
+          {
+            "title": "[2509.04664] Why Language Models Hallucinate",
+            "text": "We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.",
+            "url": "https://arxiv.org/abs/2509.04664"
+          },
+          {
+            "title": "Why language models hallucinate | OpenAI",
+            "text": "The same principle applies in pretraining. Spelling and parentheses follow consistent patterns, so errors there disappear with scale. But arbitrary low-frequency facts, like a pet\u2019s birthday, cannot be predicted from patterns alone and hence lead to hallucinations.",
+            "url": "https://openai.com/index/why-language-models-hallucinate/"
+          },
+          {
+            "title": "Large Language Models Hallucination: A Comprehensive Survey",
+            "text": "The sources of the hallucination related to the model architecture involve attention mechanism, objective function, positional encoding, and unidirectional contextualization. Attention enables LLMs to dynamically focus on different segments of the input when generating an output.",
+            "url": "https://arxiv.org/html/2510.06265v2"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions | ACM Transactions on Information Systems",
+            "text": "Language models often exhibit a localized focus within their attention mechanisms, giving priority to nearby words and resulting in a notable deficit in context attention. This concern is amplified in LLMs that generate lengthy and comprehensive responses, increasing the risk of instruction forgetting. This insufficient attention can directly contribute to faithfulness hallucinations, wherein the model outputs content that deviates from the original context.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "snippets": [
+          {
+            "title": "Do Robot Snakes Dream like Electric Sheep? Investigating the ...",
+            "text": "Do changes in architecture exacerbate/alleviate existing concerns about hallucinations? Do they affect how and where they occur? Through an extensive evaluation ...",
+            "url": "https://arxiv.org/html/2410.17477v3"
+          },
+          {
+            "title": "[PDF] Do Robot Snakes Dream like Electric Sheep? Investigating the Effects of ...",
+            "text": "Jul 27, 2025\u00b7Through an extensive eval- uation, we study how these architecture-based inductive biases affect the propensity to hallu- cinate. While ...",
+            "url": "https://aclanthology.org/2025.findings-acl.60.pdf"
+          },
+          {
+            "title": "Why Do Large Language Models Hallucinate? | AWS Builder Center",
+            "text": "May 13, 2025\u00b7Large Language Model (LLM) hallucinations stem from three main factors: data quality issues, model training methodologies, and architectural limitations.Missing:affect| Show results with:affect",
+            "url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models - PMC",
+            "text": "Intrinsic factors within model architecture, training data quality, and sampling algorithms significantly contribute to hallucination problems. If the ...",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "snippets": [
+          {
+            "title": "Detecting hallucinations in large language models using ...",
+            "text": "Jun 19, 2024 \u00b7Here we develop newmethodsgrounded in statistics, proposing entropy-based uncertainty estimators forLLMstodetecta subset ofhallucinations\u2014confabulations\u2014which are arbitrary and...",
+            "url": "https://www.nature.com/articles/s41586-024-07421-0"
+          },
+          {
+            "title": "Hallucination Detection in Large Language Models with ...",
+            "text": "Feb 20, 2025 \u00b7This paper presents MetaQA, a self-containedhallucinationdetectionapproach that leverages metamorphic relation and prompt mutation. Unlike existingmethods, MetaQA operates without any external resources and is compatible with both open-source and closed-sourceLLMs.Jun 24, 2025 \u00b7Multiple studies have exploredmethodsto evaluateLLMuncertainty anddetecthallucinations. However, existing approaches are often probabilistic and computationally expensive, limiting their practical applicability.Furthermore, we comprehensively outline a variety of effectivedetectionmethodsspecifically devised fordetectinghallucinationsinLLMs, as well as an exhaustive overview of benchmarks related toLLMhallucinations, serving as appropriate testbeds to assess the extent ofhallucinationsgenerated by LLMs and the efficacy of detection methods.May 3, 2025 \u00b7Concerns regarding the propensity ofLargeLanguageModels(LLMs) to produce inaccurate outputs, also known ashallucinations, have escalated.Detectingthem is vital for ensuring the reliability of applications relying onLLM-generated content.Here we develop newmethodsgrounded in statistics, proposing entropy-based uncertainty estimators forLLMstodetecta subset ofhallucinations\u2014confabulations\u2014which are arbitrary and incorrect generations.What is hallucination in large language models?Hallucination in Large Language Models(LLMs) referstooutputs that appear fluent and coherent butarefactually incorrect, logically inconsistent,orentirely fabricated. AsLLMs areincreasingly deployedineducation, healthcare, law, and scientific research, understanding and mitigatinghallucinationshas become critical.Can LLM hallucinations be detected?The foundational premise behind these strategies is that the origin of LLM hallucinations is inherently tied to the model\u2019s uncertainty. Therefore, by estimating the uncertainty of the factual content generated by the model,it becomes feasible to detect hallucinations.Can large language models mitigate hallucinations?Having identifiedthedual nature ofhallucinations\u2013arising from both prompt design and intrinsic model behavior\u2014this section explores existing and emerging approachestomitigatehallucinations in Large Language Models(LLMs).Can LLMs detect hallucinations based on token and vocabulary probabilities?By enhancingthereliability ofLLMoutputs,the proposedmethod contributesto theethical use of thesemodels insensitive applications, such as medical, legal, educational, and financial domains. This work is a step toward creating a reliable methodto detect hallucinations in LLMsbased on token and vocabulary probabilities.Sep 30, 2025 \u00b7In this work, we present a comprehensive survey and empirical analysis ofhallucinationattribution inLLMs. Introducing a novel framework to determine whether a givenhallucinationstems from not optimize prompting or the model's intrinsic behavior.",
+            "url": "https://arxiv.org/abs/2502.15844"
+          },
+          {
+            "title": "Hallucination Detection in Large Language Models Using ...",
+            "text": "Jun 24, 2025 \u00b7Multiple studies have exploredmethodsto evaluateLLMuncertainty anddetecthallucinations. However, existing approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models ...",
+            "text": "Furthermore, we comprehensively outline a variety of effectivedetectionmethodsspecifically devised fordetectinghallucinationsinLLMs, as well as an exhaustive overview of benchmarks related toLLMhallucinations, serving as appropriate testbeds to assess the extent ofhallucinationsgenerated by LLMs and the efficacy of detection methods.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          },
+          {
+            "title": "Detecting Hallucinations in Large Language Model Generation ...",
+            "text": "May 3, 2025 \u00b7Concerns regarding the propensity ofLargeLanguageModels(LLMs) to produce inaccurate outputs, also known ashallucinations, have escalated.Detectingthem is vital for ensuring the reliability of applications relying onLLM-generated content.",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-86623-4_13"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "snippets": [
+          {
+            "title": "Best Practices for Mitigating Hallucinations in Large Language Models (LLMs) | Microsoft Community Hub",
+            "text": "April 10, 2025 -... \u2705 Reduce hallucinations through retrieval-augmented strategies and prompt engineering \u2705 Improve model output reliability, grounding, and explainability \u2705 Enable robust enterprise deployment through layered safety, monitoring, and security",
+            "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions | ACM Transactions on Information Systems",
+            "text": "The third section outlines mitigation strategies, including data filtering, retrieval-augmented generation, and decoding improvements. Each subcategory is accompanied by example references in red boxes.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior - PMC",
+            "text": "Notably, structured prompt strategies such as chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios, though intrinsic model limitations persist in some cases. These findings contribute to a deeper understanding of LLM reliability and provide insights ...",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/"
+          },
+          {
+            "title": "Mitigating Hallucination in Large Language Models (LLMs): An Application-Oriented Survey on RAG, Reasoning, and Agentic Systems",
+            "text": "October 28, 2025 -Existing hallucination mitigation methods [1, 2] span multiple stages of the LLM lifecycle, including data processing and alignment strategies [12] during pre-training, fine-tuning [13] and reinforcement learning methods based on human feedback and preferences, and inference-stage intervention ...",
+            "url": "https://arxiv.org/html/2510.24476v1"
+          },
+          {
+            "title": "Reducing hallucinations in large language models with custom intervention using Amazon Bedrock Agents | Artificial Intelligence",
+            "text": "November 26, 2024 -Strategies to mitigate hallucinations can include rigorous fact-checking mechanisms, integrating external knowledge sources using Retrieval Augmented Generation (RAG), applying confidence thresholds, and implementing human oversight or verification ...",
+            "url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "step": 3,
+    "agent": "summarizer",
+    "critic_loop": 0,
+    "input": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "snippets": [
+          {
+            "title": "Hallucination (artificial intelligence) - Wikipedia",
+            "text": "Researchers from OpenAI wrote that hallucinations occur because the training and evaluation of LLMs reward guessing over acknowledging uncertainty, and proposed modifying the scoring of benchmarks.",
+            "url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+          },
+          {
+            "title": "[2509.04664] Why Language Models Hallucinate",
+            "text": "We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.",
+            "url": "https://arxiv.org/abs/2509.04664"
+          },
+          {
+            "title": "Why language models hallucinate | OpenAI",
+            "text": "The same principle applies in pretraining. Spelling and parentheses follow consistent patterns, so errors there disappear with scale. But arbitrary low-frequency facts, like a pet\u2019s birthday, cannot be predicted from patterns alone and hence lead to hallucinations.",
+            "url": "https://openai.com/index/why-language-models-hallucinate/"
+          },
+          {
+            "title": "Large Language Models Hallucination: A Comprehensive Survey",
+            "text": "The sources of the hallucination related to the model architecture involve attention mechanism, objective function, positional encoding, and unidirectional contextualization. Attention enables LLMs to dynamically focus on different segments of the input when generating an output.",
+            "url": "https://arxiv.org/html/2510.06265v2"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions | ACM Transactions on Information Systems",
+            "text": "Language models often exhibit a localized focus within their attention mechanisms, giving priority to nearby words and resulting in a notable deficit in context attention. This concern is amplified in LLMs that generate lengthy and comprehensive responses, increasing the risk of instruction forgetting. This insufficient attention can directly contribute to faithfulness hallucinations, wherein the model outputs content that deviates from the original context.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "snippets": [
+          {
+            "title": "Do Robot Snakes Dream like Electric Sheep? Investigating the ...",
+            "text": "Do changes in architecture exacerbate/alleviate existing concerns about hallucinations? Do they affect how and where they occur? Through an extensive evaluation ...",
+            "url": "https://arxiv.org/html/2410.17477v3"
+          },
+          {
+            "title": "[PDF] Do Robot Snakes Dream like Electric Sheep? Investigating the Effects of ...",
+            "text": "Jul 27, 2025\u00b7Through an extensive eval- uation, we study how these architecture-based inductive biases affect the propensity to hallu- cinate. While ...",
+            "url": "https://aclanthology.org/2025.findings-acl.60.pdf"
+          },
+          {
+            "title": "Why Do Large Language Models Hallucinate? | AWS Builder Center",
+            "text": "May 13, 2025\u00b7Large Language Model (LLM) hallucinations stem from three main factors: data quality issues, model training methodologies, and architectural limitations.Missing:affect| Show results with:affect",
+            "url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models - PMC",
+            "text": "Intrinsic factors within model architecture, training data quality, and sampling algorithms significantly contribute to hallucination problems. If the ...",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "snippets": [
+          {
+            "title": "Detecting hallucinations in large language models using ...",
+            "text": "Jun 19, 2024 \u00b7Here we develop newmethodsgrounded in statistics, proposing entropy-based uncertainty estimators forLLMstodetecta subset ofhallucinations\u2014confabulations\u2014which are arbitrary and...",
+            "url": "https://www.nature.com/articles/s41586-024-07421-0"
+          },
+          {
+            "title": "Hallucination Detection in Large Language Models with ...",
+            "text": "Feb 20, 2025 \u00b7This paper presents MetaQA, a self-containedhallucinationdetectionapproach that leverages metamorphic relation and prompt mutation. Unlike existingmethods, MetaQA operates without any external resources and is compatible with both open-source and closed-sourceLLMs.Jun 24, 2025 \u00b7Multiple studies have exploredmethodsto evaluateLLMuncertainty anddetecthallucinations. However, existing approaches are often probabilistic and computationally expensive, limiting their practical applicability.Furthermore, we comprehensively outline a variety of effectivedetectionmethodsspecifically devised fordetectinghallucinationsinLLMs, as well as an exhaustive overview of benchmarks related toLLMhallucinations, serving as appropriate testbeds to assess the extent ofhallucinationsgenerated by LLMs and the efficacy of detection methods.May 3, 2025 \u00b7Concerns regarding the propensity ofLargeLanguageModels(LLMs) to produce inaccurate outputs, also known ashallucinations, have escalated.Detectingthem is vital for ensuring the reliability of applications relying onLLM-generated content.Here we develop newmethodsgrounded in statistics, proposing entropy-based uncertainty estimators forLLMstodetecta subset ofhallucinations\u2014confabulations\u2014which are arbitrary and incorrect generations.What is hallucination in large language models?Hallucination in Large Language Models(LLMs) referstooutputs that appear fluent and coherent butarefactually incorrect, logically inconsistent,orentirely fabricated. AsLLMs areincreasingly deployedineducation, healthcare, law, and scientific research, understanding and mitigatinghallucinationshas become critical.Can LLM hallucinations be detected?The foundational premise behind these strategies is that the origin of LLM hallucinations is inherently tied to the model\u2019s uncertainty. Therefore, by estimating the uncertainty of the factual content generated by the model,it becomes feasible to detect hallucinations.Can large language models mitigate hallucinations?Having identifiedthedual nature ofhallucinations\u2013arising from both prompt design and intrinsic model behavior\u2014this section explores existing and emerging approachestomitigatehallucinations in Large Language Models(LLMs).Can LLMs detect hallucinations based on token and vocabulary probabilities?By enhancingthereliability ofLLMoutputs,the proposedmethod contributesto theethical use of thesemodels insensitive applications, such as medical, legal, educational, and financial domains. This work is a step toward creating a reliable methodto detect hallucinations in LLMsbased on token and vocabulary probabilities.Sep 30, 2025 \u00b7In this work, we present a comprehensive survey and empirical analysis ofhallucinationattribution inLLMs. Introducing a novel framework to determine whether a givenhallucinationstems from not optimize prompting or the model's intrinsic behavior.",
+            "url": "https://arxiv.org/abs/2502.15844"
+          },
+          {
+            "title": "Hallucination Detection in Large Language Models Using ...",
+            "text": "Jun 24, 2025 \u00b7Multiple studies have exploredmethodsto evaluateLLMuncertainty anddetecthallucinations. However, existing approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models ...",
+            "text": "Furthermore, we comprehensively outline a variety of effectivedetectionmethodsspecifically devised fordetectinghallucinationsinLLMs, as well as an exhaustive overview of benchmarks related toLLMhallucinations, serving as appropriate testbeds to assess the extent ofhallucinationsgenerated by LLMs and the efficacy of detection methods.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          },
+          {
+            "title": "Detecting Hallucinations in Large Language Model Generation ...",
+            "text": "May 3, 2025 \u00b7Concerns regarding the propensity ofLargeLanguageModels(LLMs) to produce inaccurate outputs, also known ashallucinations, have escalated.Detectingthem is vital for ensuring the reliability of applications relying onLLM-generated content.",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-86623-4_13"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "snippets": [
+          {
+            "title": "Best Practices for Mitigating Hallucinations in Large Language Models (LLMs) | Microsoft Community Hub",
+            "text": "April 10, 2025 -... \u2705 Reduce hallucinations through retrieval-augmented strategies and prompt engineering \u2705 Improve model output reliability, grounding, and explainability \u2705 Enable robust enterprise deployment through layered safety, monitoring, and security",
+            "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions | ACM Transactions on Information Systems",
+            "text": "The third section outlines mitigation strategies, including data filtering, retrieval-augmented generation, and decoding improvements. Each subcategory is accompanied by example references in red boxes.",
+            "url": "https://dl.acm.org/doi/10.1145/3703155"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior - PMC",
+            "text": "Notably, structured prompt strategies such as chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios, though intrinsic model limitations persist in some cases. These findings contribute to a deeper understanding of LLM reliability and provide insights ...",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/"
+          },
+          {
+            "title": "Mitigating Hallucination in Large Language Models (LLMs): An Application-Oriented Survey on RAG, Reasoning, and Agentic Systems",
+            "text": "October 28, 2025 -Existing hallucination mitigation methods [1, 2] span multiple stages of the LLM lifecycle, including data processing and alignment strategies [12] during pre-training, fine-tuning [13] and reinforcement learning methods based on human feedback and preferences, and inference-stage intervention ...",
+            "url": "https://arxiv.org/html/2510.24476v1"
+          },
+          {
+            "title": "Reducing hallucinations in large language models with custom intervention using Amazon Bedrock Agents | Artificial Intelligence",
+            "text": "November 26, 2024 -Strategies to mitigate hallucinations can include rigorous fact-checking mechanisms, integrating external knowledge sources using Retrieval Augmented Generation (RAG), applying confidence thresholds, and implementing human oversight or verification ...",
+            "url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/"
+          }
+        ]
+      }
+    ],
+    "output": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "facts": [
+          {
+            "claim": "Hallucinations occur because the training and evaluation of large language models reward guessing over acknowledging uncertainty.",
+            "source_url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+            "confidence": "high"
+          },
+          {
+            "claim": "Arbitrary low-frequency facts, which cannot be predicted from patterns alone, cause hallucinations in large language models.",
+            "source_url": "https://openai.com/index/why-language-models-hallucinate/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Model architecture factors such as attention mechanism, objective function, positional encoding, and unidirectional contextualization contribute to hallucination.",
+            "source_url": "https://arxiv.org/html/2510.06265v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Language models often focus locally within their attention mechanisms, prioritizing nearby words and neglecting broader context, which increases the risk of hallucination due to instruction forgetting.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "facts": [
+          {
+            "claim": "Architecture-based inductive biases affect the propensity of large language models to hallucinate.",
+            "source_url": "https://aclanthology.org/2025.findings-acl.60.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Changes in model architecture can exacerbate or alleviate hallucination concerns and influence how and where hallucinations occur.",
+            "source_url": "https://arxiv.org/html/2410.17477v3",
+            "confidence": "high"
+          },
+          {
+            "claim": "Large language model hallucinations stem partly from model training methodologies and architectural limitations.",
+            "source_url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate",
+            "confidence": "high"
+          },
+          {
+            "claim": "Intrinsic factors within model architecture and training data quality significantly contribute to hallucination problems in large language models.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Entropy-based uncertainty estimators grounded in statistics have been proposed as a method to detect a subset of hallucinations called confabulations in large language models.",
+            "source_url": "https://www.nature.com/articles/s41586-024-07421-0",
+            "confidence": "high"
+          },
+          {
+            "claim": "MetaQA is a self-contained hallucination detection approach that leverages metamorphic relation and prompt mutation, operates without external resources, and is compatible with both open-source and closed-source LLMs.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Hallucination detection methods often evaluate the uncertainty of large language models\u2019 outputs, assuming hallucinations arise from the model\u2019s uncertainty about factual content.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Existing hallucination detection approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "source_url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final",
+            "confidence": "high"
+          },
+          {
+            "claim": "There exists a variety of effective detection methods specifically devised for hallucinations in large language models, along with benchmarks designed to assess hallucination extent and detection efficacy.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Mitigation strategies for hallucinations include retrieval-augmented generation, prompt engineering, and improving model output reliability, grounding, and explainability.",
+            "source_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129",
+            "confidence": "high"
+          },
+          {
+            "claim": "Mitigation strategies cover multiple stages such as data processing and alignment during pre-training, fine-tuning, reinforcement learning from human feedback, and inference-stage intervention.",
+            "source_url": "https://arxiv.org/html/2510.24476v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Structured prompt strategies like chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Data filtering, retrieval-augmented generation, and decoding improvements are key categories of mitigation strategies against hallucinations.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          },
+          {
+            "claim": "Additional strategies include rigorous fact-checking mechanisms, applying confidence thresholds, integrating external knowledge sources via Retrieval Augmented Generation (RAG), and human oversight or verification.",
+            "source_url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/",
+            "confidence": "high"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "step": 4,
+    "agent": "critic",
+    "critic_loop": 0,
+    "input": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "facts": [
+          {
+            "claim": "Hallucinations occur because the training and evaluation of large language models reward guessing over acknowledging uncertainty.",
+            "source_url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+            "confidence": "high"
+          },
+          {
+            "claim": "Arbitrary low-frequency facts, which cannot be predicted from patterns alone, cause hallucinations in large language models.",
+            "source_url": "https://openai.com/index/why-language-models-hallucinate/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Model architecture factors such as attention mechanism, objective function, positional encoding, and unidirectional contextualization contribute to hallucination.",
+            "source_url": "https://arxiv.org/html/2510.06265v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Language models often focus locally within their attention mechanisms, prioritizing nearby words and neglecting broader context, which increases the risk of hallucination due to instruction forgetting.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "facts": [
+          {
+            "claim": "Architecture-based inductive biases affect the propensity of large language models to hallucinate.",
+            "source_url": "https://aclanthology.org/2025.findings-acl.60.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Changes in model architecture can exacerbate or alleviate hallucination concerns and influence how and where hallucinations occur.",
+            "source_url": "https://arxiv.org/html/2410.17477v3",
+            "confidence": "high"
+          },
+          {
+            "claim": "Large language model hallucinations stem partly from model training methodologies and architectural limitations.",
+            "source_url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate",
+            "confidence": "high"
+          },
+          {
+            "claim": "Intrinsic factors within model architecture and training data quality significantly contribute to hallucination problems in large language models.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Entropy-based uncertainty estimators grounded in statistics have been proposed as a method to detect a subset of hallucinations called confabulations in large language models.",
+            "source_url": "https://www.nature.com/articles/s41586-024-07421-0",
+            "confidence": "high"
+          },
+          {
+            "claim": "MetaQA is a self-contained hallucination detection approach that leverages metamorphic relation and prompt mutation, operates without external resources, and is compatible with both open-source and closed-source LLMs.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Hallucination detection methods often evaluate the uncertainty of large language models\u2019 outputs, assuming hallucinations arise from the model\u2019s uncertainty about factual content.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Existing hallucination detection approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "source_url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final",
+            "confidence": "high"
+          },
+          {
+            "claim": "There exists a variety of effective detection methods specifically devised for hallucinations in large language models, along with benchmarks designed to assess hallucination extent and detection efficacy.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Mitigation strategies for hallucinations include retrieval-augmented generation, prompt engineering, and improving model output reliability, grounding, and explainability.",
+            "source_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129",
+            "confidence": "high"
+          },
+          {
+            "claim": "Mitigation strategies cover multiple stages such as data processing and alignment during pre-training, fine-tuning, reinforcement learning from human feedback, and inference-stage intervention.",
+            "source_url": "https://arxiv.org/html/2510.24476v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Structured prompt strategies like chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Data filtering, retrieval-augmented generation, and decoding improvements are key categories of mitigation strategies against hallucinations.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          },
+          {
+            "claim": "Additional strategies include rigorous fact-checking mechanisms, applying confidence thresholds, integrating external knowledge sources via Retrieval Augmented Generation (RAG), and human oversight or verification.",
+            "source_url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "facts": [
+          {
+            "claim": "Hallucinations in large language models arise from the architecture of the model, the training data used, their statistical modeling, and the prompt query.",
+            "source_url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228",
+            "confidence": "medium"
+          },
+          {
+            "claim": "LLM hallucinations result from multifaceted origins spanning the entire spectrum of the models' capability acquisition process.",
+            "source_url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "facts": [
+          {
+            "claim": "Hallucinations are an inherent consequence of the transformer architecture's reliance on probabilistic sampling for language generation.",
+            "source_url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Autoencoder (AE) transformer models excel in bi-directional context understanding, whereas autoregressive (AR) models have less discrepancy between pre-training and fine-tuning tasks.",
+            "source_url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Transformers, while powerful pattern matchers, do not perform symbolic reasoning and hence can hallucinate facts due to architectural limitations.",
+            "source_url": "https://www.datacamp.com/tutorial/how-transformers-work",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "facts": [
+          {
+            "claim": "Current hallucination detection methods in large language models face challenges due to the fluent and syntactically correct nature of hallucinated content, which complicates the accurate identification of false or fabricated information.",
+            "source_url": "https://arxiv.org/html/2510.06265v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Despite the development of hallucination detection approaches, comprehensive empirical performance comparisons of these methods remain scarce, contributing to a critical knowledge gap.",
+            "source_url": "https://link.springer.com/article/10.1007/s10586-025-05891-z",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Limitations of current hallucination detection strategies include difficulties in handling logical inconsistencies and entirely fabricated outputs in practical deployment contexts such as education, healthcare, and law.",
+            "source_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full",
+            "confidence": "high"
+          },
+          {
+            "claim": "The reliability concerns raised by hallucinations necessitate advanced detection and mitigation strategies, however, existing methods need further improvement and benchmarking in real-world information retrieval systems.",
+            "source_url": "https://dl.acm.org/doi/abs/10.1145/3703155",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Structured reviews have outlined the theoretical frameworks for hallucination detection but highlight a lack of thorough empirical evaluations and head-to-head comparisons across different methods.",
+            "source_url": "https://www.preprints.org/manuscript/202510.0540/v1",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "facts": [
+          {
+            "claim": "Improving prompt engineering by crafting clear, specific prompts and avoiding ambiguous language reduces hallucinations in generative AI by guiding the model towards accurate and relevant outputs.",
+            "source_url": "https://panelsai.com/generative-ai/hallucinations/",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Using Large Language Models (LLMs) to verify the output of other LLMs is a prevalent strategy for reducing hallucinations, but relying on them to judge factual accuracy is risky.",
+            "source_url": "https://arxiv.org/html/2603.17872v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Lightweight LLM incident response methods experimentally improve recovery speed, reduce hallucinations, and integrate easily into Security Operations Center (SOC) workflows.",
+            "source_url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ],
+    "output": {
+      "gaps": [
+        "While the main causes of hallucination are described, there is limited detail on the underlying cognitive or neural mechanisms within the model that specifically produce hallucinations beyond training incentives and attention limitations.",
+        "There is no direct comparison or specific evidence detailing how different architectures quantitatively differ in hallucination rates or types; effects of training data characteristics beyond quality are not deeply explored.",
+        "Hallucination detection methods are mentioned, but there is a lack of detail on their effectiveness, limitations, or comparative evaluations across different approaches.",
+        "Mitigation strategies are broadly described, but there is insufficient information on their relative effectiveness, potential trade-offs, or implementation challenges."
+      ],
+      "requery_needed": true,
+      "requery_questions": [
+        "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?"
+      ]
+    }
+  },
+  {
+    "step": 5,
+    "agent": "retriever",
+    "critic_loop": 1,
+    "input": [
+      "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+      "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+      "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+      "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?"
+    ],
+    "output": [
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "snippets": [
+          {
+            "title": "Hallucinations in LLM Explained | Medium",
+            "text": "Having said that, hallucinations operate differently within LLMs compared to human cognition. In human cognition, hallucinations might arise due to mental illness or brain disorders, while in LLMs, they can come from the architecture of the model, the training data used, their statistical modelling, and the prompt query. Types of Hallucination...",
+            "url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228"
+          },
+          {
+            "title": "What causes LLM Hallucinations? - by Vivedha Elango",
+            "text": "What are LLM Hallucinations? When AI models generate text, they sometimes produce information that's not accurate or doesn't match the original content. This is called a \"hallucination\". What causes LLMs to Hallucinate? Hallucinations have multifaceted origins, spanning the entire spectrum of LLMs' capability acquisition process.",
+            "url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "snippets": [
+          {
+            "title": "How Transformers Work: A Detailed Exploration of Transformer Architecture | DataCamp",
+            "text": "January 9, 2024 -Lack of explicit reasoning: While powerful pattern matchers, Transformers don't perform symbolic reasoning and can hallucinate facts \u00b7 Position encoding limitations: Standard positional encodings struggle to generalize to sequence lengths not seen during training \u00b7 Research continues to address ...",
+            "url": "https://www.datacamp.com/tutorial/how-transformers-work"
+          },
+          {
+            "title": "Mathematical Foundations of Hallucination in Transformer- ...",
+            "text": "probabilistic nature of language generation implied that LLMs \u00b7 would inevitably produce outputs that deviated from the input \u00b7 data under certain conditions [28]. The theoretical analysis \u00b7 demonstrated that hallucinations were an inherent consequence \u00b7 of the transformer architecture\u2019s reliance on probabilistic sam-",
+            "url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf"
+          },
+          {
+            "title": "An In-Depth Look at the Transformer Based Models | by Yule Wang, PhD | The Modern Scientist | Medium",
+            "text": "February 8, 2024 -The article reveals that autoencoder (AE) models excel in bi-directional context understanding. However,autoregressive (AR) models have an advantage in that there is less discrepancy between pre-training and fine-tuning downstream tasks.",
+            "url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b"
+          },
+          {
+            "title": "A survey of transformers and large language models for ECG diagnosis: advances, challenges, and future directions | Artificial Intelligence Review | Springer Nature Link",
+            "text": "June 4, 2025 -In light of these limitations, the paper presents a discussion of critical gaps and introduces new future directions aimed at improving ECG representation, enhancing positional encodings, refining self-attention architectures, and addressing challenges related to hallucinations and confidence measures in LLMs.",
+            "url": "https://link.springer.com/article/10.1007/s10462-025-11259-x"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "snippets": [
+          {
+            "title": "A Comprehensive Survey of Hallucination in Large Language Models ...",
+            "text": "AbstractLargelanguagemodels (LLMs) have transformed naturallanguageprocessing, achieving remarkableperformanceacross diverse tasks. However, their impressive fluency often comes at the cost of producing false or fabricated information, a phenomenon known ashallucination.Hallucinationrefers to the generation of content by an LLM that is fluent and syntactically correct but factually ...",
+            "url": "https://arxiv.org/html/2510.06265v1"
+          },
+          {
+            "title": "The rise of hallucination in large language models ... - Springer",
+            "text": "Largelanguagemodels (LLMs) have shown exceptional capabilities in NaturalLanguageProcessing (NLP) tasks. However, their tendency to generate inaccurate or fabricated information (commonly referred to ashallucinations) poses serious challenges to reliability and user trust. Despite growing research, comprehensive reviews on LLMhallucinationsarescarce, creating a critical gap in the ...",
+            "url": "https://link.springer.com/article/10.1007/s10586-025-05891-z"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models ...",
+            "text": "AbstractHallucinationinLargeLanguageModels (LLMs) refers to outputs that appear fluent and coherent but are factually incorrect, logically inconsistent, or entirely fabricated. As LLMs are increasingly deployed in education, healthcare, law, and scientific research, understanding and mitigatinghallucinationshas become critical.",
+            "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles ...",
+            "text": "Theemergence oflargelanguagemodels (LLMs) has marked a significant breakthrough in naturallanguageprocessing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone tohallucination, generating plausible yet nonfactual content. This phenomenon raises significant concerns over the reliability of LLMs in real-world information retrieval (IR) systems and has ...",
+            "url": "https://dl.acm.org/doi/abs/10.1145/3703155"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Definitions ...",
+            "text": "This review has provided a structured overview of the multifaceted challenge ofhallucinationinLargeLanguageModels, charting the course from fundamental definitions to advanceddetectionandmitigation strategies.",
+            "url": "https://www.preprints.org/manuscript/202510.0540/v1"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "snippets": [
+          {
+            "title": "Reducing Hallucinations in Generative AI: Techniques, Tools & Best...",
+            "text": "Improving prompt engineering reduces hallucinations in generative AI by crafting clear, specific prompts, practicing iterative refinement, and avoiding ambiguous language. Precise instructions guide the model toward accurate and relevant outputs, minimizing errors and fabrications.",
+            "url": "https://panelsai.com/generative-ai/hallucinations/"
+          },
+          {
+            "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered...",
+            "text": "Another prevalent strategy for reducing hallucinations is to use Large Language Models (LLMs) to verify the output of other LLMs. While these LLM evaluators are efficient for checking general coherence or relevance, relying on them to judge factual accuracy is risky.",
+            "url": "https://arxiv.org/html/2603.17872v2"
+          },
+          {
+            "title": "Using lightweight LLMs to cut incident response times and reduce...",
+            "text": "Lightweight LLM incident response method improves recovery speed, reduces hallucinations, and integrates easily into SOC workflows.",
+            "url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "step": 6,
+    "agent": "summarizer",
+    "critic_loop": 1,
+    "input": [
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "snippets": [
+          {
+            "title": "Hallucinations in LLM Explained | Medium",
+            "text": "Having said that, hallucinations operate differently within LLMs compared to human cognition. In human cognition, hallucinations might arise due to mental illness or brain disorders, while in LLMs, they can come from the architecture of the model, the training data used, their statistical modelling, and the prompt query. Types of Hallucination...",
+            "url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228"
+          },
+          {
+            "title": "What causes LLM Hallucinations? - by Vivedha Elango",
+            "text": "What are LLM Hallucinations? When AI models generate text, they sometimes produce information that's not accurate or doesn't match the original content. This is called a \"hallucination\". What causes LLMs to Hallucinate? Hallucinations have multifaceted origins, spanning the entire spectrum of LLMs' capability acquisition process.",
+            "url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "snippets": [
+          {
+            "title": "How Transformers Work: A Detailed Exploration of Transformer Architecture | DataCamp",
+            "text": "January 9, 2024 -Lack of explicit reasoning: While powerful pattern matchers, Transformers don't perform symbolic reasoning and can hallucinate facts \u00b7 Position encoding limitations: Standard positional encodings struggle to generalize to sequence lengths not seen during training \u00b7 Research continues to address ...",
+            "url": "https://www.datacamp.com/tutorial/how-transformers-work"
+          },
+          {
+            "title": "Mathematical Foundations of Hallucination in Transformer- ...",
+            "text": "probabilistic nature of language generation implied that LLMs \u00b7 would inevitably produce outputs that deviated from the input \u00b7 data under certain conditions [28]. The theoretical analysis \u00b7 demonstrated that hallucinations were an inherent consequence \u00b7 of the transformer architecture\u2019s reliance on probabilistic sam-",
+            "url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf"
+          },
+          {
+            "title": "An In-Depth Look at the Transformer Based Models | by Yule Wang, PhD | The Modern Scientist | Medium",
+            "text": "February 8, 2024 -The article reveals that autoencoder (AE) models excel in bi-directional context understanding. However,autoregressive (AR) models have an advantage in that there is less discrepancy between pre-training and fine-tuning downstream tasks.",
+            "url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b"
+          },
+          {
+            "title": "A survey of transformers and large language models for ECG diagnosis: advances, challenges, and future directions | Artificial Intelligence Review | Springer Nature Link",
+            "text": "June 4, 2025 -In light of these limitations, the paper presents a discussion of critical gaps and introduces new future directions aimed at improving ECG representation, enhancing positional encodings, refining self-attention architectures, and addressing challenges related to hallucinations and confidence measures in LLMs.",
+            "url": "https://link.springer.com/article/10.1007/s10462-025-11259-x"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "snippets": [
+          {
+            "title": "A Comprehensive Survey of Hallucination in Large Language Models ...",
+            "text": "AbstractLargelanguagemodels (LLMs) have transformed naturallanguageprocessing, achieving remarkableperformanceacross diverse tasks. However, their impressive fluency often comes at the cost of producing false or fabricated information, a phenomenon known ashallucination.Hallucinationrefers to the generation of content by an LLM that is fluent and syntactically correct but factually ...",
+            "url": "https://arxiv.org/html/2510.06265v1"
+          },
+          {
+            "title": "The rise of hallucination in large language models ... - Springer",
+            "text": "Largelanguagemodels (LLMs) have shown exceptional capabilities in NaturalLanguageProcessing (NLP) tasks. However, their tendency to generate inaccurate or fabricated information (commonly referred to ashallucinations) poses serious challenges to reliability and user trust. Despite growing research, comprehensive reviews on LLMhallucinationsarescarce, creating a critical gap in the ...",
+            "url": "https://link.springer.com/article/10.1007/s10586-025-05891-z"
+          },
+          {
+            "title": "Survey and analysis of hallucinations in large language models ...",
+            "text": "AbstractHallucinationinLargeLanguageModels (LLMs) refers to outputs that appear fluent and coherent but are factually incorrect, logically inconsistent, or entirely fabricated. As LLMs are increasingly deployed in education, healthcare, law, and scientific research, understanding and mitigatinghallucinationshas become critical.",
+            "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Principles ...",
+            "text": "Theemergence oflargelanguagemodels (LLMs) has marked a significant breakthrough in naturallanguageprocessing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone tohallucination, generating plausible yet nonfactual content. This phenomenon raises significant concerns over the reliability of LLMs in real-world information retrieval (IR) systems and has ...",
+            "url": "https://dl.acm.org/doi/abs/10.1145/3703155"
+          },
+          {
+            "title": "A Survey on Hallucination in Large Language Models: Definitions ...",
+            "text": "This review has provided a structured overview of the multifaceted challenge ofhallucinationinLargeLanguageModels, charting the course from fundamental definitions to advanceddetectionandmitigation strategies.",
+            "url": "https://www.preprints.org/manuscript/202510.0540/v1"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "snippets": [
+          {
+            "title": "Reducing Hallucinations in Generative AI: Techniques, Tools & Best...",
+            "text": "Improving prompt engineering reduces hallucinations in generative AI by crafting clear, specific prompts, practicing iterative refinement, and avoiding ambiguous language. Precise instructions guide the model toward accurate and relevant outputs, minimizing errors and fabrications.",
+            "url": "https://panelsai.com/generative-ai/hallucinations/"
+          },
+          {
+            "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered...",
+            "text": "Another prevalent strategy for reducing hallucinations is to use Large Language Models (LLMs) to verify the output of other LLMs. While these LLM evaluators are efficient for checking general coherence or relevance, relying on them to judge factual accuracy is risky.",
+            "url": "https://arxiv.org/html/2603.17872v2"
+          },
+          {
+            "title": "Using lightweight LLMs to cut incident response times and reduce...",
+            "text": "Lightweight LLM incident response method improves recovery speed, reduces hallucinations, and integrates easily into SOC workflows.",
+            "url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/"
+          }
+        ]
+      }
+    ],
+    "output": [
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "facts": [
+          {
+            "claim": "Hallucinations in large language models arise from the architecture of the model, the training data used, their statistical modeling, and the prompt query.",
+            "source_url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228",
+            "confidence": "medium"
+          },
+          {
+            "claim": "LLM hallucinations result from multifaceted origins spanning the entire spectrum of the models' capability acquisition process.",
+            "source_url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "facts": [
+          {
+            "claim": "Hallucinations are an inherent consequence of the transformer architecture's reliance on probabilistic sampling for language generation.",
+            "source_url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Autoencoder (AE) transformer models excel in bi-directional context understanding, whereas autoregressive (AR) models have less discrepancy between pre-training and fine-tuning tasks.",
+            "source_url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Transformers, while powerful pattern matchers, do not perform symbolic reasoning and hence can hallucinate facts due to architectural limitations.",
+            "source_url": "https://www.datacamp.com/tutorial/how-transformers-work",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "facts": [
+          {
+            "claim": "Current hallucination detection methods in large language models face challenges due to the fluent and syntactically correct nature of hallucinated content, which complicates the accurate identification of false or fabricated information.",
+            "source_url": "https://arxiv.org/html/2510.06265v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Despite the development of hallucination detection approaches, comprehensive empirical performance comparisons of these methods remain scarce, contributing to a critical knowledge gap.",
+            "source_url": "https://link.springer.com/article/10.1007/s10586-025-05891-z",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Limitations of current hallucination detection strategies include difficulties in handling logical inconsistencies and entirely fabricated outputs in practical deployment contexts such as education, healthcare, and law.",
+            "source_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full",
+            "confidence": "high"
+          },
+          {
+            "claim": "The reliability concerns raised by hallucinations necessitate advanced detection and mitigation strategies, however, existing methods need further improvement and benchmarking in real-world information retrieval systems.",
+            "source_url": "https://dl.acm.org/doi/abs/10.1145/3703155",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Structured reviews have outlined the theoretical frameworks for hallucination detection but highlight a lack of thorough empirical evaluations and head-to-head comparisons across different methods.",
+            "source_url": "https://www.preprints.org/manuscript/202510.0540/v1",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "facts": [
+          {
+            "claim": "Improving prompt engineering by crafting clear, specific prompts and avoiding ambiguous language reduces hallucinations in generative AI by guiding the model towards accurate and relevant outputs.",
+            "source_url": "https://panelsai.com/generative-ai/hallucinations/",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Using Large Language Models (LLMs) to verify the output of other LLMs is a prevalent strategy for reducing hallucinations, but relying on them to judge factual accuracy is risky.",
+            "source_url": "https://arxiv.org/html/2603.17872v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Lightweight LLM incident response methods experimentally improve recovery speed, reduce hallucinations, and integrate easily into Security Operations Center (SOC) workflows.",
+            "source_url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "step": 7,
+    "agent": "critic",
+    "critic_loop": 1,
+    "input": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "facts": [
+          {
+            "claim": "Hallucinations occur because the training and evaluation of large language models reward guessing over acknowledging uncertainty.",
+            "source_url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+            "confidence": "high"
+          },
+          {
+            "claim": "Arbitrary low-frequency facts, which cannot be predicted from patterns alone, cause hallucinations in large language models.",
+            "source_url": "https://openai.com/index/why-language-models-hallucinate/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Model architecture factors such as attention mechanism, objective function, positional encoding, and unidirectional contextualization contribute to hallucination.",
+            "source_url": "https://arxiv.org/html/2510.06265v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Language models often focus locally within their attention mechanisms, prioritizing nearby words and neglecting broader context, which increases the risk of hallucination due to instruction forgetting.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "facts": [
+          {
+            "claim": "Architecture-based inductive biases affect the propensity of large language models to hallucinate.",
+            "source_url": "https://aclanthology.org/2025.findings-acl.60.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Changes in model architecture can exacerbate or alleviate hallucination concerns and influence how and where hallucinations occur.",
+            "source_url": "https://arxiv.org/html/2410.17477v3",
+            "confidence": "high"
+          },
+          {
+            "claim": "Large language model hallucinations stem partly from model training methodologies and architectural limitations.",
+            "source_url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate",
+            "confidence": "high"
+          },
+          {
+            "claim": "Intrinsic factors within model architecture and training data quality significantly contribute to hallucination problems in large language models.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Entropy-based uncertainty estimators grounded in statistics have been proposed as a method to detect a subset of hallucinations called confabulations in large language models.",
+            "source_url": "https://www.nature.com/articles/s41586-024-07421-0",
+            "confidence": "high"
+          },
+          {
+            "claim": "MetaQA is a self-contained hallucination detection approach that leverages metamorphic relation and prompt mutation, operates without external resources, and is compatible with both open-source and closed-source LLMs.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Hallucination detection methods often evaluate the uncertainty of large language models\u2019 outputs, assuming hallucinations arise from the model\u2019s uncertainty about factual content.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Existing hallucination detection approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "source_url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final",
+            "confidence": "high"
+          },
+          {
+            "claim": "There exists a variety of effective detection methods specifically devised for hallucinations in large language models, along with benchmarks designed to assess hallucination extent and detection efficacy.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Mitigation strategies for hallucinations include retrieval-augmented generation, prompt engineering, and improving model output reliability, grounding, and explainability.",
+            "source_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129",
+            "confidence": "high"
+          },
+          {
+            "claim": "Mitigation strategies cover multiple stages such as data processing and alignment during pre-training, fine-tuning, reinforcement learning from human feedback, and inference-stage intervention.",
+            "source_url": "https://arxiv.org/html/2510.24476v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Structured prompt strategies like chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Data filtering, retrieval-augmented generation, and decoding improvements are key categories of mitigation strategies against hallucinations.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          },
+          {
+            "claim": "Additional strategies include rigorous fact-checking mechanisms, applying confidence thresholds, integrating external knowledge sources via Retrieval Augmented Generation (RAG), and human oversight or verification.",
+            "source_url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "facts": [
+          {
+            "claim": "Hallucinations in large language models arise from the architecture of the model, the training data used, their statistical modeling, and the prompt query.",
+            "source_url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228",
+            "confidence": "medium"
+          },
+          {
+            "claim": "LLM hallucinations result from multifaceted origins spanning the entire spectrum of the models' capability acquisition process.",
+            "source_url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "facts": [
+          {
+            "claim": "Hallucinations are an inherent consequence of the transformer architecture's reliance on probabilistic sampling for language generation.",
+            "source_url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Autoencoder (AE) transformer models excel in bi-directional context understanding, whereas autoregressive (AR) models have less discrepancy between pre-training and fine-tuning tasks.",
+            "source_url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Transformers, while powerful pattern matchers, do not perform symbolic reasoning and hence can hallucinate facts due to architectural limitations.",
+            "source_url": "https://www.datacamp.com/tutorial/how-transformers-work",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "facts": [
+          {
+            "claim": "Current hallucination detection methods in large language models face challenges due to the fluent and syntactically correct nature of hallucinated content, which complicates the accurate identification of false or fabricated information.",
+            "source_url": "https://arxiv.org/html/2510.06265v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Despite the development of hallucination detection approaches, comprehensive empirical performance comparisons of these methods remain scarce, contributing to a critical knowledge gap.",
+            "source_url": "https://link.springer.com/article/10.1007/s10586-025-05891-z",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Limitations of current hallucination detection strategies include difficulties in handling logical inconsistencies and entirely fabricated outputs in practical deployment contexts such as education, healthcare, and law.",
+            "source_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full",
+            "confidence": "high"
+          },
+          {
+            "claim": "The reliability concerns raised by hallucinations necessitate advanced detection and mitigation strategies, however, existing methods need further improvement and benchmarking in real-world information retrieval systems.",
+            "source_url": "https://dl.acm.org/doi/abs/10.1145/3703155",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Structured reviews have outlined the theoretical frameworks for hallucination detection but highlight a lack of thorough empirical evaluations and head-to-head comparisons across different methods.",
+            "source_url": "https://www.preprints.org/manuscript/202510.0540/v1",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "facts": [
+          {
+            "claim": "Improving prompt engineering by crafting clear, specific prompts and avoiding ambiguous language reduces hallucinations in generative AI by guiding the model towards accurate and relevant outputs.",
+            "source_url": "https://panelsai.com/generative-ai/hallucinations/",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Using Large Language Models (LLMs) to verify the output of other LLMs is a prevalent strategy for reducing hallucinations, but relying on them to judge factual accuracy is risky.",
+            "source_url": "https://arxiv.org/html/2603.17872v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Lightweight LLM incident response methods experimentally improve recovery speed, reduce hallucinations, and integrate easily into Security Operations Center (SOC) workflows.",
+            "source_url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ],
+    "output": {
+      "gaps": [
+        "Sub-question 5: Specific internal model processes or representations causing hallucinations beyond training and attention limitations are not well detailed; facts mostly restate general origins without novel internal mechanisms or representations being identified.",
+        "Sub-question 6: Quantitative empirical comparisons of hallucination tendencies between different model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) are lacking; details are mostly qualitative or theoretical with no clear study results or metrics provided.",
+        "Sub-question 7: There is an acknowledged scarcity of comprehensive empirical performance comparisons of hallucination detection methods, and a lack of thorough evaluations and direct benchmarks comparing approaches.",
+        "Sub-question 8: Experimental validation details of mitigation strategies and their trade-offs or challenges in real-world applications remain limited; claims are more descriptive than supported by quantitative study results or case analyses."
+      ],
+      "requery_needed": true,
+      "requery_questions": [
+        "What specific internal neural or representational mechanisms within large language models have been identified as causes for hallucination beyond generalized training and attention factors?",
+        "Are there rigorous quantitative studies comparing hallucination rates across different LLM architectures, such as autoregressive, encoder-decoder, and transformer variants? What are the comparative metrics?",
+        "What are the results from empirical evaluations comparing performance, precision, recall, and limitations of various hallucination detection methods in large language models?",
+        "Which hallucination mitigation strategies have been experimentally validated in real-world deployments, and what trade-offs (e.g., latency, accuracy, resource consumption) or challenges have been documented?"
+      ]
+    }
+  },
+  {
+    "step": 8,
+    "agent": "writer",
+    "critic_loop": 0,
+    "input": [
+      {
+        "sub_question": "What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?",
+        "facts": [
+          {
+            "claim": "Hallucinations occur because the training and evaluation of large language models reward guessing over acknowledging uncertainty.",
+            "source_url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+            "confidence": "high"
+          },
+          {
+            "claim": "Arbitrary low-frequency facts, which cannot be predicted from patterns alone, cause hallucinations in large language models.",
+            "source_url": "https://openai.com/index/why-language-models-hallucinate/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Model architecture factors such as attention mechanism, objective function, positional encoding, and unidirectional contextualization contribute to hallucination.",
+            "source_url": "https://arxiv.org/html/2510.06265v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Language models often focus locally within their attention mechanisms, prioritizing nearby words and neglecting broader context, which increases the risk of hallucination due to instruction forgetting.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different architectures and training data affect the propensity of large language models to hallucinate?",
+        "facts": [
+          {
+            "claim": "Architecture-based inductive biases affect the propensity of large language models to hallucinate.",
+            "source_url": "https://aclanthology.org/2025.findings-acl.60.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Changes in model architecture can exacerbate or alleviate hallucination concerns and influence how and where hallucinations occur.",
+            "source_url": "https://arxiv.org/html/2410.17477v3",
+            "confidence": "high"
+          },
+          {
+            "claim": "Large language model hallucinations stem partly from model training methodologies and architectural limitations.",
+            "source_url": "https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate",
+            "confidence": "high"
+          },
+          {
+            "claim": "Intrinsic factors within model architecture and training data quality significantly contribute to hallucination problems in large language models.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the current methods or techniques proposed to detect hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Entropy-based uncertainty estimators grounded in statistics have been proposed as a method to detect a subset of hallucinations called confabulations in large language models.",
+            "source_url": "https://www.nature.com/articles/s41586-024-07421-0",
+            "confidence": "high"
+          },
+          {
+            "claim": "MetaQA is a self-contained hallucination detection approach that leverages metamorphic relation and prompt mutation, operates without external resources, and is compatible with both open-source and closed-source LLMs.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Hallucination detection methods often evaluate the uncertainty of large language models\u2019 outputs, assuming hallucinations arise from the model\u2019s uncertainty about factual content.",
+            "source_url": "https://arxiv.org/abs/2502.15844",
+            "confidence": "high"
+          },
+          {
+            "claim": "Existing hallucination detection approaches are often probabilistic and computationally expensive, limiting their practical applicability.",
+            "source_url": "https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final",
+            "confidence": "high"
+          },
+          {
+            "claim": "There exists a variety of effective detection methods specifically devised for hallucinations in large language models, along with benchmarks designed to assess hallucination extent and detection efficacy.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?",
+        "facts": [
+          {
+            "claim": "Mitigation strategies for hallucinations include retrieval-augmented generation, prompt engineering, and improving model output reliability, grounding, and explainability.",
+            "source_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129",
+            "confidence": "high"
+          },
+          {
+            "claim": "Mitigation strategies cover multiple stages such as data processing and alignment during pre-training, fine-tuning, reinforcement learning from human feedback, and inference-stage intervention.",
+            "source_url": "https://arxiv.org/html/2510.24476v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Structured prompt strategies like chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios.",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/",
+            "confidence": "high"
+          },
+          {
+            "claim": "Data filtering, retrieval-augmented generation, and decoding improvements are key categories of mitigation strategies against hallucinations.",
+            "source_url": "https://dl.acm.org/doi/10.1145/3703155",
+            "confidence": "high"
+          },
+          {
+            "claim": "Additional strategies include rigorous fact-checking mechanisms, applying confidence thresholds, integrating external knowledge sources via Retrieval Augmented Generation (RAG), and human oversight or verification.",
+            "source_url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?",
+        "facts": [
+          {
+            "claim": "Hallucinations in large language models arise from the architecture of the model, the training data used, their statistical modeling, and the prompt query.",
+            "source_url": "https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228",
+            "confidence": "medium"
+          },
+          {
+            "claim": "LLM hallucinations result from multifaceted origins spanning the entire spectrum of the models' capability acquisition process.",
+            "source_url": "https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?",
+        "facts": [
+          {
+            "claim": "Hallucinations are an inherent consequence of the transformer architecture's reliance on probabilistic sampling for language generation.",
+            "source_url": "https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf",
+            "confidence": "high"
+          },
+          {
+            "claim": "Autoencoder (AE) transformer models excel in bi-directional context understanding, whereas autoregressive (AR) models have less discrepancy between pre-training and fine-tuning tasks.",
+            "source_url": "https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Transformers, while powerful pattern matchers, do not perform symbolic reasoning and hence can hallucinate facts due to architectural limitations.",
+            "source_url": "https://www.datacamp.com/tutorial/how-transformers-work",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "sub_question": "What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?",
+        "facts": [
+          {
+            "claim": "Current hallucination detection methods in large language models face challenges due to the fluent and syntactically correct nature of hallucinated content, which complicates the accurate identification of false or fabricated information.",
+            "source_url": "https://arxiv.org/html/2510.06265v1",
+            "confidence": "high"
+          },
+          {
+            "claim": "Despite the development of hallucination detection approaches, comprehensive empirical performance comparisons of these methods remain scarce, contributing to a critical knowledge gap.",
+            "source_url": "https://link.springer.com/article/10.1007/s10586-025-05891-z",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Limitations of current hallucination detection strategies include difficulties in handling logical inconsistencies and entirely fabricated outputs in practical deployment contexts such as education, healthcare, and law.",
+            "source_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full",
+            "confidence": "high"
+          },
+          {
+            "claim": "The reliability concerns raised by hallucinations necessitate advanced detection and mitigation strategies, however, existing methods need further improvement and benchmarking in real-world information retrieval systems.",
+            "source_url": "https://dl.acm.org/doi/abs/10.1145/3703155",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Structured reviews have outlined the theoretical frameworks for hallucination detection but highlight a lack of thorough empirical evaluations and head-to-head comparisons across different methods.",
+            "source_url": "https://www.preprints.org/manuscript/202510.0540/v1",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "sub_question": "Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?",
+        "facts": [
+          {
+            "claim": "Improving prompt engineering by crafting clear, specific prompts and avoiding ambiguous language reduces hallucinations in generative AI by guiding the model towards accurate and relevant outputs.",
+            "source_url": "https://panelsai.com/generative-ai/hallucinations/",
+            "confidence": "medium"
+          },
+          {
+            "claim": "Using Large Language Models (LLMs) to verify the output of other LLMs is a prevalent strategy for reducing hallucinations, but relying on them to judge factual accuracy is risky.",
+            "source_url": "https://arxiv.org/html/2603.17872v2",
+            "confidence": "high"
+          },
+          {
+            "claim": "Lightweight LLM incident response methods experimentally improve recovery speed, reduce hallucinations, and integrate easily into Security Operations Center (SOC) workflows.",
+            "source_url": "https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ],
+    "output": "# Hallucinations in Large Language Models: Causes, Detection, and Mitigation\n\n## Executive Summary\nHallucinations in large language models (LLMs) arise primarily due to the interplay between model architectures, training data limitations, and probabilistic generation mechanisms that encourage confident guessing rather than acknowledging uncertainty. Variations in architecture, training methodologies, and data quality significantly affect hallucination tendencies. Current detection approaches rely heavily on uncertainty estimation and metamorphic testing techniques but face challenges such as computational expense and difficulty in identifying fluent yet fabricated outputs. Mitigation strategies span prompt engineering, retrieval-augmented generation, fine-tuning, and human-in-the-loop interventions, with experimental validations supporting some approaches like structured prompting. However, trade-offs involving complexity, reliability, and applicability in real-world settings persist.\n\n## What are the main causes or mechanisms that lead large language models to generate hallucinated outputs?\nHallucinations largely stem from the nature of LLM training and evaluation frameworks that reward confident output rather than expressing uncertainty, prompting models to guess when facts are unknown or ambiguous. This incentive structure drives hallucinations particularly for low-frequency facts that lack sufficient pattern representation in training data, making them unpredictable via statistical modeling alone [Wikipedia](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)); [OpenAI](https://openai.com/index/why-language-models-hallucinate/). Architectural factors also contribute: attention mechanisms tend to prioritize local context while neglecting broader instructions, causing memory loss or instruction forgetting that further increases hallucination risk during text generation [ACM Digital Library](https://dl.acm.org/doi/10.1145/3703155). Additional model aspects such as objective functions, positional encodings, and unidirectional contextualization exacerbate hallucination tendencies by limiting holistic context integration [ArXiv](https://arxiv.org/html/2510.06265v2).\n\n## How do different architectures and training data affect the propensity of large language models to hallucinate?\nModel architecture imposes inductive biases that directly influence hallucination likelihood. Changes to transformer-based designs or training paradigms can either amplify or mitigate hallucinations by affecting how models encode, attend, and generate language [Findings ACL](https://aclanthology.org/2025.findings-acl.60.pdf); [ArXiv](https://arxiv.org/html/2410.17477v3). Architectural limitations, coupled with the quality and distribution of training data, jointly determine hallucination severity; models trained on less rigorous datasets or with incomplete knowledge bases are prone to produce fabricated outputs [AWS Builder](https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/). Transformer architectures, in particular, due to their probabilistic sampling approach, inherently risk hallucinating by prioritizing fluent output over factual correctness [TechRxiv](https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf). Autoencoder transformer variants and autoregressive models differ in their contextual understanding and task alignment, which also modulates hallucination behaviors [Medium](https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b).\n\n## What are the current methods or techniques proposed to detect hallucinations in large language models?\nDetection methods predominantly leverage uncertainty quantification, using entropy-based or probabilistic estimators to identify outputs with higher confabulation risk [Nature](https://www.nature.com/articles/s41586-024-07421-0). Techniques like MetaQA apply metamorphic testing through prompt mutation to detect inconsistencies internally, requiring no external datasets and compatible with open or closed LLMs [ArXiv](https://arxiv.org/abs/2502.15844). Comprehensive detection approaches examine model output uncertainty as a proxy for hallucination presence, recognizing a correlation between uncertain model states and hallucinated content [ArXiv](https://arxiv.org/abs/2502.15844). However, these methods tend to be computationally intensive and probabilistic in nature, which challenges scalability in real-time applications [NIST](https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final). Benchmarks exist to assess hallucination extent and detection efficacy, reflecting ongoing efforts to quantify and systematize detection methodologies [ACM Digital Library](https://dl.acm.org/doi/10.1145/3703155).\n\n## What mitigation strategies have been developed to reduce or prevent hallucinations in large language models?\nA multi-stage array of mitigation strategies has been developed. These include retrieval-augmented generation (RAG), which grounds model outputs on external knowledge bases to improve factuality [Microsoft Tech Community](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129). Prompt engineering, especially structured prompting like chain-of-thought (CoT), has been successful in reducing hallucinations in sensitive contexts by encouraging transparency and explicit reasoning [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/). Additionally, interventions occur across pre-training (data filtering and alignment), fine-tuning with human feedback, and inference stages incorporating confidence thresholds and fact-checking mechanisms [ArXiv](https://arxiv.org/html/2510.24476v1); [ACM Digital Library](https://dl.acm.org/doi/10.1145/3703155). Human oversight and integration of external knowledge sources further enhance reliability [AWS Blog](https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/).\n\n## What are the specific internal model processes or representations that cause hallucinations during text generation beyond training and attention limitations?\nHallucinations arise not only from training data and attention scope limitations but also from fundamental architectural and statistical modeling traits. The probabilistic sampling inherent in transformer-based architectures encourages generation of fluent but potentially fabricated content, as these models lack symbolic reasoning capabilities and rely heavily on learned patterns rather than truth verification [TechRxiv](https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf); [DataCamp](https://www.datacamp.com/tutorial/how-transformers-work). The local bias of attention mechanisms prioritizing adjacent tokens can lead to neglect of broader contextual instructions, facilitating erroneous and hallucinated outputs [ACM Digital Library](https://dl.acm.org/doi/10.1145/3703155). These processes collectively undermine coherent factual grounding during text generation.\n\n## How do different types of model architectures (e.g., transformer variants, autoregressive vs. encoder-decoder) compare in their hallucination tendencies based on quantitative studies?\nQuantitative comparisons reveal that architecture type influences hallucination propensities. Autoencoder transformer models excel in bi-directional context understanding, which may reduce hallucinations linked to context loss, whereas autoregressive models experience less discrepancy between pre-training and fine-tuning tasks, potentially reducing domain shift-related hallucinations [Medium](https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b). However, probabilistic generation common to all transformer variants remains a baseline source of hallucinations [TechRxiv](https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf). Overall, no architecture is immune, and differences in hallucination tendencies often depend on training, decoding strategies, and task specifics.\n\n## What are the empirical performance comparisons and limitations of current hallucination detection methods in large language models?\nEmpirical evaluations show that hallucination detection methods struggle with identifying fluent but false outputs, as syntactic correctness masks factual errors [ArXiv](https://arxiv.org/html/2510.06265v1). Comprehensive head-to-head empirical comparisons of detection approaches remain scarce, leaving a critical knowledge gap regarding their relative strengths and weaknesses [SpringerLink](https://link.springer.com/article/10.1007/s10586-025-05891-z); [Preprints](https://www.preprints.org/manuscript/202510.0540/v1). Detection methods also have difficulties handling logical inconsistencies or entirely fabricated content in real-world domains such as healthcare and law, limiting practical utility [Frontiers AI](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full). Reliability concerns necessitate ongoing development and benchmarking of detection systems in deployed information retrieval contexts [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3703155).\n\n## Which mitigation strategies have been experimentally validated to most effectively reduce hallucinations, and what are their trade-offs or challenges in real-world application?\nExperimental validation supports prompt engineering improvements, such as crafting clear, unambiguous prompts and structured techniques like chain-of-thought, as effective in reducing hallucinations [PanelsAI](https://panelsai.com/generative-ai/hallucinations/). Using LLMs themselves to verify outputs is common but risky, given potential recursive hallucinations and overconfidence [ArXiv](https://arxiv.org/html/2603.17872v2). Lightweight incident response methods using LLMs have shown promise for rapid hallucination recovery and integration into operational workflows like Security Operations Centers, but evidence remains preliminary [HelpNetSecurity](https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/). Trade-offs include increased computational cost, complexity, reliance on external knowledge sources, and human oversight requirements, which complicate deployment at scale.\n\n## Limitations\nThis report synthesizes high-confidence facts primarily focused on transformer-based large language models within the NLP domain, explicitly excluding other AI model types. While causes and architectural impacts are well-documented, quantitative comparisons among different architectures regarding hallucination rates remain limited. Detection method analyses face scarcity of comprehensive empirical benchmarking, limiting conclusions on comparative effectiveness. Similarly, mitigation strategy results vary between experimental setups, with real-world application challenges underexplored. Specific internal processes beyond attention and training constraints are described in general terms but lack detailed neuro-computational models or representations. Readers should verify recent advances and empirical results as the field rapidly evolves.\n\n## References\n1. https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)  \n2. https://openai.com/index/why-language-models-hallucinate/  \n3. https://arxiv.org/html/2510.06265v2  \n4. https://dl.acm.org/doi/10.1145/3703155  \n5. https://aclanthology.org/2025.findings-acl.60.pdf  \n6. https://arxiv.org/html/2410.17477v3  \n7. https://builder.aws.com/content/2x37YnzachpTBpUDEkM0GX38uD1/why-do-large-language-models-hallucinate  \n8. https://pmc.ncbi.nlm.nih.gov/articles/PMC12518350/  \n9. https://www.nature.com/articles/s41586-024-07421-0  \n10. https://arxiv.org/abs/2502.15844  \n11. https://csrc.nist.gov/pubs/conference/2025/06/24/hallucination-detection-in-llms-using-diversion-de/final  \n12. https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/best-practices-for-mitigating-hallucinations-in-large-language-models-llms/4403129  \n13. https://arxiv.org/html/2510.24476v1  \n14. https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-large-language-models-with-custom-intervention-using-amazon-bedrock-agents/  \n15. https://rumn.medium.com/hallucinations-in-llm-explained-1f64929b7228  \n16. https://vivedhaelango.substack.com/p/what-causes-llm-hallucinations  \n17. https://www.techrxiv.org/users/795624/articles/1114192/master/file/data/math/math.pdf  \n18. https://medium.com/the-modern-scientist/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b  \n19. https://www.datacamp.com/tutorial/how-transformers-work  \n20. https://link.springer.com/article/10.1007/s10586-025-05891-z  \n21. https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1622292/full  \n22. https://www.preprints.org/manuscript/202510.0540/v1  \n23. https://arxiv.org/html/2603.17872v2  \n24. https://panelsai.com/generative-ai/hallucinations/  \n25. https://www.helpnetsecurity.com/2025/08/21/lightweight-llm-incident-response/"
+  }
+]
