@@ -33,7 +33,7 @@ Output goes to `outputs/report.md`. The full agent trajectory is saved to `outpu
 ---
 
 ## Architecture
-![image alt]([https://github.com/Guri080/ForYou-Tube/blob/c00d5a9d4cd28886d66f47ac226b6bb553d558a5/assests/feed_diag.png](https://github.com/Guri080/Auto-Research-Multi-Agent-System/blob/03d9b131be28bd3501edb2c446e4295c3a9cc783/assests/architecture%20design.png))
+![image alt](https://github.com/Guri080/Auto-Research-Multi-Agent-System/blob/03d9b131be28bd3501edb2c446e4295c3a9cc783/assests/architecture%20design.png)
 
 Every agent talks to the next one through JSON. No shared state. The full conversation each agent had with the model is logged to `trajectory.json`.
 
