@@ -11,7 +11,6 @@ MAX_ITERATIONS = 2
 MODEL = 'gpt-4.1-mini'
 
 
-
 def run_agent(
         system_prompt: str,
         user_prompt: str,
